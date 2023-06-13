@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Roboto+Condensed&display=swap');
+
+.header-container{
+    background-color: #fff;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+}
+ .filter-section{
+       flex: 1;
+    }
+   
+
+.profile-element{
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+.user-profile{
+    display: flex;
+    align-items: center;
+}
+
+.notifications{
+    display: flex;
+    cursor: pointer;
+}
+
+.bell-icon{
+    margin-top:.5rem;
+    margin-right:-.3rem;
+}
+
+.notification-count{
+    color:#fff;
+    margin:.2rem;
+    font-size:0.7rem;
+    font-weight:bold;
+    background-color:red;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.avatar{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: .5rem;
+    cursor: pointer;
+}
+
+.user-identity{
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.user-name{
+    font-size: 1rem;
+    font-family: 'Condensed', sans-serif;
+}
+
+.user-email{
+    font-size: .7rem;
+    color: #848181;
+    font-family: 'Condensed', sans-serif;
+}
+
+.menu-container{
+    display: none;
+}
+
+.dropDownMenu{
+    background-color: #fff;
+    border: 0px;
+}
+
+.dropDownCard {
+    background: #ffffff;
+    border-radius: 8px;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 300px;
+    height: auto;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
+    transform: translateY(-20px);
+    transition: opacity 0.4s ease, transform 0.4s ease, visibility 0.4s;
+    display: flex;
+    flex-direction: column;
+}
+
+.notifications-header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #096E3E;
+    padding: 1rem;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.notification-title{
+    color: #ffffff;
+}
+
+.mark-all{
+    border: 0px;
+    padding: .2rem;
+    background-color: #ffffff;
+    color: #096E3E;
+    font-size: .7rem;
+    border-radius: .2rem;
+}
+
+.notifications-body{
+    padding: .5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.notifications-body-container{
+    height: 400px;
+    overflow: scroll;
+}
+
+.notifications-body-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.notification-description{
+    color: #848181;
+    font-size: 12px;
+}
+
+/* For mobile phones: */
+@media only screen and (max-width: 768px) {
+    .header-container{
+        width: 100%;
+        height: 60px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0;
+        padding-left: 5px;
+    }
+    .profile-section{
+        // order: 1;
+        width: 100%;
+        height: 100%;
+        flex: 1;
+        padding-left: 1rem;
+
+    }
+    .profile-element{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0rem;
+    }
+    .user-profile{
+        display: flex;
+        align-items: center;
+    }
+    .user-identity{
+        display: none;
+    }
+    .menu-container{
+        width: 50px;
+        height: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+  }
+
+.dropDownMenu{
+    background-color: #fff;
+    border: 0;
+    width: auto;
+    
+  }
+
+.dropDownCard {
+    background: #ffffff;
+    border-radius: 8px;
+    position: absolute;
+    top: 70px;
+    right: -80px;
+    width: 200px;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
+    transform: translateY(-20px);
+    transition: opacity 0.4s ease, transform 0.4s ease, visibility 0.4s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.notificationDropDownCard{
+    background: #ffffff;
+    border-radius: 8px;
+    position: absolute;
+    top: 70px;
+    right: -80px;
+    width: 250px;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
+    transform: translateY(-20px);
+    transition: opacity 0.4s ease, transform 0.4s ease, visibility 0.4s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+ .menu-list{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: .2rem;
+    }
+
+.menu-title{
+        color: #494848;
+        font-size: 14px;
+    }
+
+    .d-lg-none{
+        display: block;
+        @media (min-width: 768px){
+            display: none;
+        }
+    }
